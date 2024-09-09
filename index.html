@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta http-equiv="x-ua-compatible" content="ie=edge" />
+      <title>SRKR</title>
+      <meta name="description" content="" />
+      <meta
+         name="viewport"
+         content="width=device-width, initial-scale=1, user-scalable=0"
+         />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- favicon
+         ============================================ -->
+      <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png" />
+      <!-- Bootstrap CSS
+         ============================================ -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- Fontawsome CSS
+         ============================================ -->
+      <link rel="stylesheet" href="css/font-awesome.min.css" />
+      <!-- Metarial Iconic Font CSS
+         ============================================ -->
+      <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+      <!-- Plugin CSS
+         ============================================ -->
+      <link rel="stylesheet" href="css/plugin.css" />
+      <!-- Style CSS
+         ============================================ -->
+      <link rel="stylesheet" href="style.css" />
+      <!-- Responsive CSS
+         ============================================ -->
+      <link rel="stylesheet" href="css/responsive.css" />
+      <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+      <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world-merc.js"></script>
+      <script src="https://unpkg.com/bs-brain@2.0.4/components/maps/map-1/assets/controller/map-1.js"></script>
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css">
+      <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/maps/map-1/assets/css/map-1.css">
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <style>
+         .carousel-item img {
+         max-height: 100px; /* Adjust based on your requirement */
+         object-fit: contain;
+         }
+         .carousel-inner {
+         padding: 10px;
+         }
+         .banner-section {
+         text-align: center;
+         margin: 0 auto;
+         padding: 20px 0;
+         background-color: #f8f9fa; /* Light background for contrast */
+         }
+         .banner-section img {
+         max-width: 100%; /* Ensure the image scales well */
+         height: auto;
+         }
+         /* Customize the gallery container */
+         .picture-gallery {
+         width: 100%;
+         overflow: hidden;
+         position: relative;
+         }
+         .picture-gallery-inner {
+         display: flex;
+         transition: transform 0.5s ease-in-out;
+         white-space: nowrap;
+         }
+         .picture-gallery img {
+         max-width: 100%;
+         height: auto;
+         margin-right: 10px;
+         border-radius: 10px;
+         }
+         .form {
+         --input-focus: #2d8cf0;
+         --font-color: #323232;
+         --font-color-sub: #666;
+         --bg-color: beige;
+         --main-color: black;
+         padding: 20px;
+         background: lightblue;
+         display: flex;
+         flex-direction: column;
+         align-items: center; /* Center items horizontally */
+         justify-content: center;
+         gap: 20px;
+         border-radius: 5px;
+         border: 2px solid var(--main-color);
+         box-shadow: 4px 4px var(--main-color);
+         width: 400px; /
+         }
+         .title {
+         color: var(--font-color);
+         font-weight: 900;
+         font-size: 20px;
+         margin-bottom: 25px;
+         }
+         .title span {
+         color: var(--font-color-sub);
+         font-weight: 600;
+         font-size: 17px;
+         }
+         .input {
+         width: 250px;
+         height: 40px;
+         border-radius: 5px;
+         border: 2px solid var(--main-color);
+         background-color: var(--bg-color);
+         box-shadow: 4px 4px var(--main-color);
+         font-size: 15px;
+         font-weight: 600;
+         color: var(--font-color);
+         padding: 5px 10px;
+         outline: none;
+         }
+         .input::placeholder {
+         color: var(--font-color-sub);
+         opacity: 0.8;
+         }
+         .input:focus {
+         border: 2px solid var(--input-focus);
+         }
+         .login-with {
+         display: flex;
+         gap: 20px;
+         }
+         .button-log {
+         cursor: pointer;
+         width: 40px;
+         height: 40px;
+         border-radius: 100%;
+         border: 2px solid var(--main-color);
+         background-color: var(--bg-color);
+         box-shadow: 4px 4px var(--main-color);
+         color: var(--font-color);
+         font-size: 25px;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         }
+         .icon {
+         width: 24px;
+         height: 24px;
+         fill: var(--main-color);
+         }
+         .button-log:active, .button-confirm:active {
+         box-shadow: 0px 0px var(--main-color);
+         transform: translate(3px, 3px);
+         }
+         .button-confirm {
+         margin: 50px auto 0 auto;
+         width: 120px;
+         height: 40px;
+         border-radius: 5px;
+         border: 2px solid var(--main-color);
+         background-color: var(--bg-color);
+         box-shadow: 4px 4px var(--main-color);
+         font-size: 17px;
+         font-weight: 600;
+         color: var(--font-color);
+         cursor: pointer;
+         }
+      </style>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+      <style>
+         .modal-dialog {
+         max-width: 400px;
+         }
+         .modal-dialog-centered {
+         display: flex;
+         align-items: center;
+         min-height: calc(100% - 1rem); /* Adjust if needed */
+         }
+         .modal-lg-custom {
+         max-width: 50%; /* Adjust width to your preference */
+         }
+         .modal-body {
+         display: flex;
+         justify-content: center; /* Center horizontally */
+         align-items: center; /* Center vertically */
+         padding: 0; /* Remove default padding if needed */
+         }
+         .modal-backdrop.show {
+         opacity: 0; /* Hide backdrop */
+         }
+         /* Ensure the modal itself is transparent */
+         .modal {
+         background: transparent !important; /* Transparent background */
+         }
+         .modal-dialog {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 100%; /* Full height to center modal */
+         }
+         .modal-content {
+         background: rgba(173, 216, 230, 0); /* Background color for the modal content */
+         border-radius: 1px;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="loading">
+         <div class="text-center middle">
+            <div class="lds-ellipsis">
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+            </div>
+         </div>
+      </div>
+      <!--Loading Area End-->
+      <!--Main Wrapper Start-->
+      <div class="as-mainwrapper">
+         <!--Bg White Start-->
+         <div class="bg-white">
+            <!--Header Area Start-->
+            <header>
+               <div class="header-top">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-7 col-md-6 col-12">
+                        </div>
+                        <div class="col-lg-5 col-md-6 col-12">
+                           <div class="header-top-right">
+                              <span>Phone: +91 9347923953</span>
+                              <span>Email: srkr@example.com</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="header-logo-menu sticker">
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-3 col-12">
+                           <div class="logo">
+                              <a href="index.html"
+                                 ><img src="img/logo/logo.png" style="width:270px;" alt="EDUCAT"
+                                 /></a>
+                           </div>
+                        </div>
+                        <div class="col-lg-9 col-12">
+                           <div class="mainmenu-area pull-right">
+                              <div class="mainmenu d-none d-lg-block">
+                                 <nav>
+                                    <ul id="nav">
+                                       <li class="current">
+                                          <a href="index.html"></a>
+                                       </li>
+                                       <li>
+                                          <a href="#">About Us</a>
+                                          <ul class="sub-menu">
+                                             <li><a href="activity.html">Our Activity</a></li>
+                                             <li><a href="governingbody.html">Governing Body</a></li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="">Academics</a>
+                                          <ul class="sub-menu">
+                                             <li><a href="about (1).html">Academic Calender</a></li>
+                                             <li><a href="blog-left-sidebar.html">Regulation</a></li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="course.html">Admissions</a>
+                                          <ul class="sub-menu">
+                                             <li>
+                                                <a href="course.html"
+                                                   >Courses Details</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a href="blog-no-sidebar.html"
+                                                   >Eamcet Cutoff</a
+                                                   >
+                                             </li>
+                                          </ul>
+                                       </li>
+                                       <li>
+                                          <a href="">Research</a>
+                                          <ul class="sub-menu">
+                                             <li>
+                                                <a href="technologycenter.html"
+                                                   >Technology Center</a
+                                                   >
+                                             </li>
+                                             <li>
+                                                <a href="research.html"
+                                                   >Research Projects</a
+                                                   >
+                                             </li>
+                                          </ul>
+                                       </li>
+                                    </ul>
+                                 </nav>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Mobile Menu Area start -->
+               <div class="mobile-menu-area">
+                  <div class="container clearfix">
+                     <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12">
+                           <div class="mobile-menu">
+                              <nav id="dropdown">
+                                 <ul>
+                                    <li>
+                                       <a href="index.html">HOME</a>
+                                       <ul>
+                                          <li><a href="index.html">Home Version 1</a></li>
+                                          <li><a href="index-2.html">Home Version 1</a></li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="gallery.html">Gallery</a>
+                                       <ul>
+                                          <li><a href="gallery.html">Gallery</a></li>
+                                          <li>
+                                             <a href="gallery-2.html">Gallery Filtaring</a>
+                                          </li>
+                                          <li>
+                                             <a href="gallery-four-column.html"
+                                                >Gallery Four Column</a
+                                                >
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li><a href="team-details.html">Team Details</a></li>
+                                    <li>
+                                       <a href="course.html">Courses</a>
+                                       <ul class="sub-menu">
+                                          <li>
+                                             <a href="courses-details.html">Courses Details</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="shop.html">Shop</a>
+                                       <ul class="sub-menu">
+                                          <li>
+                                             <a href="single-product.html">Single Product</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="event.html">Event</a>
+                                       <ul class="sub-menu">
+                                          <li>
+                                             <a href="event-details.html">Event Details</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="blog.html">Blog</a>
+                                       <ul class="sub-menu">
+                                          <li>
+                                             <a href="blog-details.html">Blog Details</a>
+                                          </li>
+                                          <li>
+                                             <a href="blog-left-sidebar.html"
+                                                >Blog Left Sidebar</a
+                                                >
+                                          </li>
+                                          <li>
+                                             <a href="blog-no-sidebar.html">Blog No Sidebar</a>
+                                          </li>
+                                       </ul>
+                                    </li>
+                                    <li>
+                                       <a href="contact.html">Pages</a>
+                                       <ul>
+                                          <li>
+                                             <a href="team-details.html">Team Details</a>
+                                          </li>
+                                          <li><a href="course.html">Courses Page</a></li>
+                                          <li>
+                                             <a href="courses-details.html"
+                                                >Course Details Page</a
+                                                >
+                                          </li>
+                                          <li><a href="event.html">Event Page</a></li>
+                                          <li>
+                                             <a href="event-details.html"
+                                                >Event Details Page</a
+                                                >
+                                          </li>
+                                          <li><a href="blog.html">Blog</a></li>
+                                          <li>
+                                             <a href="blog-details.html">Blog Details Page</a>
+                                          </li>
+                                          <li>
+                                             <a href="blog-left-sidebar.html"
+                                                >Blog Left Sidebar</a
+                                                >
+                                          </li>
+                                          <li>
+                                             <a href="blog-no-sidebar.html">Blog No Sidebar</a>
+                                          </li>
+                                          <li><a href="wishlist.html">Wishlist Page</a></li>
+                                          <li><a href="checkout.html">Checkout Page</a></li>
+                                          <li><a href="cart.html">Shopping Cart Page</a></li>
+                                          <li>
+                                             <a href="login-register.html">Login Page</a>
+                                          </li>
+                                          <li><a href="contact.html">Contact</a></li>
+                                          <li><a href="404.html">404 Error</a></li>
+                                       </ul>
+                                    </li>
+                                    <li><a href="contact.html">Contact us</a></li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <!-- Mobile Menu Area end -->
+            </header>
+            <!--End of Header Area-->
+            <!--Slider Area Start-->
+            <div class="slider-area">
+               <div class="hero-slider owl-carousel">
+                  <!--Single Slider Start-->
+                  <div
+                     class="single-slider"
+                     style="background-image: url(img/slider/image.svg)"
+                     >
+                     <div class="hero-slider-content">
+                        <h1>
+                           Education Needs <br />
+                           Complete Solution
+                        </h1>
+                        <p>
+                           A world-class technical institution that strives for the socio-ecological well-being of the society.
+                        </p>
+                        <div class="slider-btn">
+                           <button type="button" class="btn button-default" data-bs-toggle="modal" data-bs-target="#loginModal">
+                           Join US
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="single-slider"
+                     style="background-image: url(img/slider/carousal1.jpg)"
+                     >
+                     <div class="hero-slider-content">
+                        <h1>
+                           Discover, Learn, Succeed
+                        </h1>
+                        <p>
+                           A world-class technical institution that strives for the socio-ecological well-being of the society.
+                        </p>
+                        <div class="slider-btn">
+                           <button type="button" class="btn button-default" data-bs-toggle="modal" data-bs-target="#loginModal">
+                           Join US
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="single-slider"
+                     style="background-image: url(img/slider/carousal3.jpg)"
+                     >
+                     <div class="hero-slider-content">
+                        <h1>
+                           Unlock Your Potential with Every Lesson
+                        </h1>
+                        <p>
+                           A world-class technical institution that strives for the socio-ecological well-being of the society.
+                        </p>
+                        <div class="slider-btn">
+                           <button type="button" class="btn button-default" data-bs-toggle="modal" data-bs-target="#loginModal">
+                           Join US
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <div
+                     class="single-slider"
+                     style="background-image: url(img/slider/carousal2.jpg)"
+                     >
+                     <div class="hero-slider-content">
+                        <h1>
+                           Where Education  <br />
+                           Meets Ambition
+                        </h1>
+                        <p>
+                           A world-class technical institution that strives for the socio-ecological well-being of the society.
+                        </p>
+                        <div class="slider-btn">
+                           <button type="button" class="btn button-default" data-bs-toggle="modal" data-bs-target="#loginModal">
+                           Join US
+                           </button>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Single Slider End-->
+                  <!--Single Slider Start-->
+                  <div
+                     class="single-slider"
+                     style="background-image: url(img/slider/2.jpg)"
+                     >
+                     <div class="hero-slider-content">
+                        <h1>
+                           Explore Knowledge,<br> Expand Horizons
+                        </h1>
+                        <p>
+                           SRKR Engineering College, where tradition meets technology and education transforms into excellence.
+                        </p>
+                     </div>
+                  </div>
+                  <!--Single Slider End-->
+               </div>
+            </div>
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered modal-lg-custom">
+                  <div class="modal-content">
+                     <div class="modal-body">
+                        <form class="form" action="joinus.php">
+                           <div class="title">Welcome,<br><span>to SRKR</span></div>
+                           <input class="input" name="email" placeholder="Email" type="email">
+                           <input class="input" name="name" placeholder="Name" type="name">
+                           <button class="button-confirm">Let`s go →</button>
+                     </div>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--Slider Area End-->
+         <section class="banner-section">
+            <img src="img/slider/srkr.png" alt="SRKR Engineering College Banner">
+         </section>
+         <!--Fun Factor Area Start-->
+         <div class="fun-factor-area">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-fun-factor mb-30">
+                        <h2><span class="counter">179</span>+</h2>
+                        <h4>Teachers</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-fun-factor mb-30">
+                        <h2><span class="counter">1200</span>+</h2>
+                        <h4>Members</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-fun-factor mb-30">
+                        <h2><span class="counter">36</span>+</h2>
+                        <h4>Courses</h4>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6 col-12">
+                     <div class="single-fun-factor mb-30">
+                        <h2><span class="counter">1000</span>+</h2>
+                        <h4>Placements</h4>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End of Fun Factor Area-->
+         <!--Latest News Area Start-->
+         <div class="latest-area section-padding bg-white">
+            <div class="container">
+               <div class="row">
+                  <div class="col-md-12">
+                     <div class="section-title-wrapper">
+                        <div class="section-title">
+                           <h3>Latest News</h3>
+                           <p>There are many intresting news at srkr!!</p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="single-latest-item">
+                        <div class="single-latest-image">
+                           <a href="blog-details.html"
+                              ><img src="img/latest/1.jpg" alt=""
+                              /></a>
+                        </div>
+                        <div class="single-latest-text">
+                           <h3>
+                              <a href="blog-details.html">🤖🎓 Future Jobs Revolve Around JAL Intelligence (JAI), Says Expert 🗣️ </a>
+                           </h3>
+                           <br>
+                           <div class="single-item-comment-view">
+                              <span
+                                 ><i class="zmdi zmdi-calendar-check"></i>25 jun
+                              2024</span
+                                 >
+                              <span><i class="zmdi zmdi-eye"></i>59</span>
+                              <span><i class="zmdi zmdi-comments"></i>19</span>
+                           </div>
+                           <p>
+                              🗣️ Artificial Intelligence luminary Uma Desu garu declared at a workshop in Bhimavaram SRKR Engineering College that the future of technology hinges on JAL Intelligence (JAI). Speaking passionately, Desu
+                           </p>
+                           <a href="blog-details.html" class="button-default"
+                              >Read More</a
+                              >
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="single-latest-item">
+                        <div class="single-latest-image">
+                           <a href="blog-details.html"
+                              ><img src="img/latest/2.jpg" alt=""
+                              /></a>
+                        </div>
+                        <div class="single-latest-text">
+                           <h3>
+                              <a href="blog-details.html">AI Expert Uma Desu garu Highlights Importance of Rapid Tech Adoption</a>
+                           </h3>
+                           <br>
+                           <div class="single-item-comment-view">
+                              <span
+                                 ><i class="zmdi zmdi-calendar-check"></i>25 july
+                              2024</span
+                                 >
+                              <span><i class="zmdi zmdi-eye"></i>69</span>
+                              <span><i class="zmdi zmdi-comments"></i>29</span>
+                           </div>
+                           <p>
+                              Uma Desu garu, an expert in artificial intelligence, urged the faculty of Geni Engineering College to stay updated with the latest technology at a week-long workshop on Generative AI Prompt Engineering. 
+                           </p>
+                           <a href="blog-details.html" class="button-default"
+                              >Read More</a
+                              >
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-12">
+                     <div class="single-latest-item">
+                        <div class="single-latest-image">
+                           <a href="blog-details.html"
+                              ><img src="img/latest/4.jpg" alt=""
+                              /></a>
+                        </div>
+                        <div class="single-latest-text">
+                           <h3>
+                              <a href="blog-details.html">National-Level FDP on Blockchain Technology at SRKR Engg College 📅</a>
+                           </h3>
+                           <br>
+                           <div class="single-item-comment-view">
+                              <span
+                                 ><i class="zmdi zmdi-calendar-check"></i>25 Aug
+                              2024</span
+                                 >
+                              <span><i class="zmdi zmdi-eye"></i>59</span>
+                              <span><i class="zmdi zmdi-comments"></i>19</span>
+                           </div>
+                           <p>
+                              📅 Get ready for an electrifying leap into the future of technology! 🌟 SRKR Engineering College in Bhimavaram is thrilled to announce a cutting-edge Faculty Development Program (FDP). 
+                           </p>
+                           <a href="blog-details.html" class="button-default"
+                              >Read More</a
+                              >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End of Latest News Area-->
+         <!-- About 7 - Bootstrap Brain Component -->
+         <section class="py-3 py-md-5 py-xl-8">
+            <div class="container">
+               <div class="row justify-content-md-center">
+                  <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+                     <h2 class="mb-4 display-5 text-center">About Us</h2>
+                     <p class="text-secondary mb-5 text-center lead fs-4">At SRKR Engineering College, we are committed to fostering academic excellence and innovation.our institution stands as a beacon of advanced learning and research in engineering and technology. </p>
+                     <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+                  </div>
+               </div>
+            </div>
+            <div class="container">
+               <div class="row gy-4 gy-lg-0 align-items-lg-center">
+                  <div class="col-12 col-lg-6">
+                     <img class="img-fluid rounded border border-dark" loading="lazy" src="img/slider/sagi.jpg" style ="width:400px;height:550px;" alt="About Us">
+                  </div>
+                  <div class="col-12 col-lg-6 col-xxl-6">
+                     <div class="row justify-content-lg-end">
+                        <div class="col-12 col-lg-11">
+                           <div class="about-wrapper">
+                              <p class="lead mb-4 mb-md-5">Established with a vision to create leaders and innovators, we offer a diverse range of undergraduate and postgraduate programs designed to equip students with the knowledge and skills necessary to excel in their careers. 
+                                 Our state-of-the-art facilities, dedicated faculty, and vibrant campus life create an environment that encourages intellectual curiosity and personal growth. Join us at SRKR Engineering College, where tradition meets technology and education transforms into excellence.
+                              </p>
+                              <div class="row gy-4 mb-4 mb-md-5">
+                                 <div class="col-12 col-md-6">
+                                    <div class="card border border-dark">
+                                       <div class="card-body p-4">
+                                          <h3 class="display-5 fw-bold text-primary text-center mb-2">370+</h3>
+                                          <p class="fw-bold text-center m-0">Qualified Experts</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="col-12 col-md-6">
+                                    <div class="card border border-dark">
+                                       <div class="card-body p-4">
+                                          <h3 class="display-5 fw-bold text-primary text-center mb-2">18k+</h3>
+                                          <p class="fw-bold text-center m-0">Strong community</p>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <br>
+         <br><br>
+         <br>
+         <section class="py-5">
+            <div class="container">
+               <div class="row">
+                  <!-- Video Gallery -->
+                  <div class="col-lg-6 mb-4 mb-lg-0">
+                     <h3 class="mb-3">Video Gallery</h3>
+                     <div class="embed-responsive embed-responsive-16by9">
+                        <iframe width="360" height="207" src="https://www.youtube.com/embed/mMejQJX731k" title="Overview of SRKREC_2024 | 44 Years of Legacy in Education | Bhimavaram" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                     </div>
+                     <a href="https://www.youtube.com/@srkreclive8303" class="d-block mt-3 text-decoration-none text-danger">Go to SRKREC Video Zone <i class="bi bi-arrow-right-circle"></i></a>
+                  </div>
+                  <!-- Picture Gallery -->
+                  <div class="col-lg-6">
+                     <h3 class="mb-3">Picture Gallery</h3>
+                     <div class="row g-2 picture-gallery" style="overflow-x: hidden; white-space: nowrap;">
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/a.jpg" class="img-fluid rounded" alt="Picture 1">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/b.jpg" class="img-fluid rounded" alt="Picture 2">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/c.jpg" class="img-fluid rounded" alt="Picture 3">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/d.jpg" class="img-fluid rounded" alt="Picture 4">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/e.jpg" class="img-fluid rounded" alt="Picture 5">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/f.jpg" class="img-fluid rounded" alt="Picture 6">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/g.jpg" class="img-fluid rounded" alt="Picture 7">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/h.jpg" class="img-fluid rounded" alt="Picture 8">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/i.jpg" class="img-fluid rounded" alt="Picture 9">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/j.jpg" class="img-fluid rounded" alt="Picture 10">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/k.jpg" class="img-fluid rounded" alt="Picture 11">
+                        </div>
+                        <div class="col-4 d-inline-block">
+                           <img src="img/slider/l.jpg" class="img-fluid rounded" alt="Picture 12">
+                        </div>
+                     </div>
+                     <a href="#!" class="d-block mt-3 text-decoration-none text-danger">Go to Gallery <i class="bi bi-arrow-right-circle"></i></a>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <!-- JavaScript to Automatically Scroll the Gallery -->
+         <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const gallery = document.querySelector('.picture-gallery');
+                let scrollAmount = 0;
+            
+                function scrollGallery() {
+                    gallery.scrollBy({ 
+                        top: 100, // Adjust the scroll distance per step
+                        behavior: 'smooth'
+                    });
+                    scrollAmount += 100; // Increment the scroll amount
+                    if (scrollAmount >= gallery.scrollHeight - gallery.clientHeight) {
+                        scrollAmount = 0;
+                        gallery.scrollTo({ top: 0, behavior: 'smooth' }); // Reset to the start
+                    }
+                }
+            
+                setInterval(scrollGallery, 2000); // Scroll every 2 seconds
+            });
+         </script>
+      </div>
+      </div>
+      </section>
+      <br><br>
+      <br><br>
+      <br>
+      <br>
+      <section class="py-3 py-md-5 py-xl-8">
+         <div class="container">
+            <div class="row gy-5 gy-lg-0 align-items-lg-center">
+               <div class="col-12 col-lg-6">
+                  <img class="img-fluid rounded" loading="lazy" src="img/slider/girl.png" alt="Our Design Process">
+               </div>
+               <div class="col-12 col-lg-6">
+                  <div class="row justify-content-xl-end">
+                     <div class="col-12 col-xl-11">
+                        <h2 class="h1 mb-3">Our Learning Process</h2>
+                        <p class="lead fs-4 text-secondary mb-5">Our approach to learning  is meticulously organized, that our students receive the best educational experience .</p>
+                        <div class="d-flex mb-4">
+                           <div>
+                              <span class="btn btn-primary bsb-btn-circle pe-none me-4">1</span>
+                           </div>
+                           <div>
+                              <h4 class="mb-3">Planning</h4>
+                              <p class="mb-0 text-secondary">We emphasize understanding our students' needs and aspirations. Through surveys, interviews, and usability testing, we gain deep insights into the requirements of our future engineers</p>
+                           </div>
+                        </div>
+                        <div class="d-flex mb-4">
+                           <div>
+                              <span class="btn btn-primary bsb-btn-circle pe-none me-4">2</span>
+                           </div>
+                           <div>
+                              <h4 class="mb-3">Mission</h4>
+                              <p class="mb-0 text-secondary">To upgrade teaching-learning environment with state-of-the-art infrastructure to accelerate employability and entrepreneurship.
+                                .To promote inter-disciplinary research and innovation through institute–industry partnership. </p>
+                           </div>
+                        </div>
+                        <div class="d-flex">
+                           <div>
+                              <span class="btn btn-primary bsb-btn-circle pe-none me-4">3</span>
+                           </div>
+                           <div>
+                              <h4 class="mb-3">Vision</h4>
+                              <p class="mb-0 text-secondary">To emerge as a world-class technical institution that strives for the socio-ecological well-being of the society.By deploying global best practices in education to create world-class professionals
+                              .By establishing harmonious relationships with industry and society</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <br>
+      <br>
+      <br>
+      <br>
+      <section class="py-3 py-md-5">
+         <div class="container overflow-hidden">
+            <div class="section-title">
+               <h3>OUR EVENTS</h3>
+            </div>
+            <br><br>
+            <div class="row gy-5">
+               <div class="col-12">
+                  <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+                     <div class="col-xs-12 col-md-6">
+                        <div class="img-wrapper position-relative bsb-hover-push">
+                           <a href="#!">
+                           <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3"> No to Drugs</span>
+                           <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="img/slider/event1.jpeg" alt="Sports">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-6">
+                        <div>
+                           <p class="text-secondary mb-1">Aug 11, 2024</p>
+                           <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">Awareness Program on Anti-Drug and Anti-Tobacco</a></h2>
+                           <p class="mb-4">SRKR Engineering College recently organized an impactful Anti-Drug and Anti-Tobacco Awareness Program aimed at educating students on the dangers of substance abuse. </p>
+                           <a class="btn btn-primary" href="#!" target="_self">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br><br>
+               <div class="col-12">
+                  <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+                     <div class="col-xs-12 col-md-6">
+                        <div class="img-wrapper position-relative bsb-hover-push">
+                           <a href="#!">
+                           <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">FF24</span>
+                           <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="img/slider/eventff.jpeg" alt="Travel">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-6">
+                        <div>
+                           <p class="text-secondary mb-1">Oct 9, 2022</p>
+                           <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">Freedom Fest 2K24</a></h2>
+                           <p class="mb-4">Get ready for an exhilarating experience as SRKR Swecha Learning Centre proudly presents the much-awaited Freedom Fest 2024!Don't miss out on this golden opportunity</p>
+                           <a class="btn btn-primary" href="#!" target="_self">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br><br>
+               <div class="col-12">
+                  <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+                     <div class="col-xs-12 col-md-6">
+                        <div class="img-wrapper position-relative bsb-hover-push">
+                           <a href="#!">
+                           <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">Nipuna</span>
+                           <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="img/slider/eventnipuna.jpeg" alt="Photography">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-6">
+                        <div>
+                           <p class="text-secondary mb-1">Sep 17, 2022</p>
+                           <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">NIPUNA - National Level Techno Management Symposium.</a></h2>
+                           <p class="mb-4">SRKR Engineering College is proud to host the prestigious national-level techno-management symposium, "Nipuna 2k24," organized by the ISTE (Indian Society for Technical Education). Scheduled to take place on march 22nd and 23rd</p>
+                           <a class="btn btn-primary" href="#!" target="_self">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <br><br>
+               <div class="col-12">
+                  <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+                     <div class="col-xs-12 col-md-6">
+                        <div class="img-wrapper position-relative bsb-hover-push">
+                           <a href="#!">
+                           <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">Hackathon</span>
+                           <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="img/slider/mern.jpeg" alt="Food">
+                           </a>
+                        </div>
+                     </div>
+                     <div class="col-xs-12 col-md-6">
+                        <div>
+                           <p class="text-secondary mb-1">Aug 23, 2022</p>
+                           <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">National MERN Stack Bootcamp & Hackathon</a></h2>
+                           <p class="mb-4">The Department of Information Technology at SRKREC is proud to announce a groundbreaking initiative on MERN stack devlopment hackathon ......</p>
+                           <a class="btn btn-primary" href="#!" target="_self">Read More</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <br>
+            <h2 class="h3 mb-3"><a class="link-dark text-decoration-none" href="#!">Many more loading....</a></h2>
+         </div>
+      </section>
+      <br>
+      <br><br>
+      <br>
+      <section class="py-3 py-md-5">
+         <div class="row justify-content-center">
+            <h2 class="mb-4 display-5 text-center">Our SRKR College</h2>
+            <div class="col-12 col-lg-9 col-xl-8">
+               <div class="card widget-card border-light shadow-sm">
+                  <div class="card-body p-4">
+                     <div class="d-block d-sm-flex align-items-center justify-content-between mb-3">
+                        <div class="mb-2 mb-sm-0">
+                           <h5 class="card-title widget-card-title m-0">Quick tour!!!</h5>
+                        </div>
+                        <div>
+                           <span class="text-secondary fs-7">Last updated: 7 days ago</span>
+                        </div>
+                     </div>
+                     
+					 <iframe src="https://www.google.com/maps/embed?pb=!4v1724082575312!6m8!1m7!1sCAoSLEFGMVFpcE9nMnVJWnpBUjlfUWZKMHEweWkxSE42MWxKTXYtYVRvQU9HTEZQ!2m2!1d16.54317910973418!2d81.4963822236225!3f190.32439391320452!4f17.920908910109958!5f0.7820865974627469" frameborder="2" style="border:1" width="100%" height="300px" allowfullscreen=""></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section id="placement-partners" class="py-5">
+         <div class="container">
+            <h2 class="text-center mb-4">Placement Partners</h2>
+            <div id="placementPartnersCarousel" class="carousel slide" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="d-flex justify-content-around">
+                        <img src="img/slider/c1.png" alt="TCS" class="img-fluid">
+                        <img src="img/slider/c2.png" alt="Yahoo" class="img-fluid">
+                        <img src="img/slider/c3.png" alt="Tech Mahindra" class="img-fluid">
+                        <img src="img/slider/c5.png" alt="Bosch" class="img-fluid">
+                        <img src="img/slider/c4.png" alt="Bosch" class="img-fluid">
+                     </div>
+                  </div>
+                  <div class="carousel-item">
+                     <div class="d-flex justify-content-around">
+                        <img src="img/slider/c6.png" alt="Capgemini" class="img-fluid">
+                        <img src="img/slider/c7.png" alt="NTT Data" class="img-fluid">
+                        <img src="img/slider/c8.png" alt="Mphasis" class="img-fluid">
+                        <img src="img/slider/c9.png" alt="Osmosys" class="img-fluid">
+                        <img src="img/slider/c10.png" alt="Bosch" class="img-fluid">
+                     </div>
+                  </div>
+               </div>
+               <a class="carousel-control-prev" href="#placementPartnersCarousel" role="button" data-bs-slide="prev">
+               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Previous</span>
+               </a>
+               <a class="carousel-control-next" href="#placementPartnersCarousel" role="button" data-bs-slide="next">
+               <span class="carousel-control-next-icon" aria-hidden="true"></span>
+               <span class="visually-hidden">Next</span>
+               </a>
+               <script>
+                  var carousel = new bootstrap.Carousel('#placementPartnersCarousel', {
+                      interval: 2000,  // 2 seconds interval
+                      ride: 'carousel', // Starts autoplay
+                      wrap: true        // Ensures the carousel loops around
+                  });
+               </script>
+            </div>
+         </div>
+      </section>
+      <!--End of Online Product Area-->
+      <div class="testimonial-area">
+         <div class="container">
+            <div class="row">
+               <div class="testimonial-slider owl-carousel">
+                  <div class="col-12">
+                     <!--Single Testimonial Area Start-->
+                     <div class="single-testimonial-area">
+                        <div class="testimonial-image">
+                           <img src="img/testimonial/testimonial1.png" alt="" />
+                        </div>
+                        <div class="testimonial-content">
+                           <p class="author-desc">
+                              "SRKR Engineering College has been a transformative experience for me. The faculty members are not only highly knowledgeable but also genuinely invested in our success. The state-of-the-art labs and industry exposure have given me the practical skills I need to excel in my field."
+                           </p>
+                           <p class="testimonial-author">— Sandeep Reddy, BTech CSE,</p>
+                        </div>
+                     </div>
+                     <!--Single Testimonial Area End-->
+                  </div>
+                  <div class="col-12">
+                     <!--Single Testimonial Area Start-->
+                     <div class="single-testimonial-area">
+                        <div class="testimonial-image">
+                           <img src="img/testimonial/testimonial2.png" alt="" />
+                        </div>
+                        <div class="testimonial-content">
+                           <p class="author-desc">
+                              The learning environment at SRKR is unparalleled. The emphasis on research and innovation, coupled with the support from faculty, has allowed me to explore my interests in depth. I feel confident and prepared to take on challenges in the tech industry."
+                           </p>
+                           <p class="testimonial-author">— Priyansh , BTech ECE</p>
+                        </div>
+                     </div>
+                     <!--Single Testimonial Area End-->
+                  </div>
+                  <div class="col-12">
+                     <!--Single Testimonial Area Start-->
+                     <div class="single-testimonial-area">
+                        <div class="testimonial-image">
+                           <img src="img/testimonial/testimonial3.png" alt="" />
+                        </div>
+                        <div class="testimonial-content">
+                           <p class="author-desc">
+                              Choosing SRKR Engineering College was one of the best decisions I've made. The campus is vibrant and full of opportunities. From technical fests to cultural events, there's always something to participate in. The college has helped me grow both academically and personally."
+                           </p>
+                           <p class="testimonial-author">— Ravi Teja, BTech Mechanical Engineering,</p>
+                        </div>
+                     </div>
+                     <!--Single Testimonial Area End-->
+                  </div>
+                  <div class="col-12">
+                     <!--Single Testimonial Area Start-->
+                     <div class="single-testimonial-area">
+                        <div class="testimonial-image">
+                           <img src="img/testimonial/testimonial4.png" alt="" />
+                        </div>
+                        <div class="testimonial-content">
+                           <p class="author-desc">
+                              SRKR Engineering College provides a perfect blend of academics and extracurricular activities. The focus on holistic development has helped me enhance my technical skills while also developing leadership qualities. The placement support is excellent, and I secured a job at a top MNC even before graduating."
+                           </p>
+                           <p class="testimonial-author"> — Anush Varma, BTech EEE, </p>
+                        </div>
+                     </div>
+                     <!--Single Testimonial Area End-->
+                  </div>
+                  <div class="col-12">
+                     <!--Single Testimonial Area Start-->
+                     <div class="single-testimonial-area">
+                        <div class="testimonial-image">
+                           <img src="img/testimonial/testimonial5.png" alt="" />
+                        </div>
+                        <div class="testimonial-content">
+                           <p class="author-desc">
+                              The faculty and infrastructure at SRKR Engineering College are top-notch. The hands-on learning approach and exposure to real-world projects have been instrumental in shaping my career. I am proud to be an SRKR alumnus."
+                           </p>
+                           <p class="testimonial-author"> —  Krishna Srii, BTech Civil Engineering,</p>
+                        </div>
+                     </div>
+                     <!--Single Testimonial Area End-->
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Testimonial Area End-->
+      <footer>
+         <!--Newsletter Area Start-->
+         <div class="newsletter-area">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-5 col-md-5">
+                     <div class="newsletter-content">
+                        <h3>SUBSCRIBE</h3>
+                        <h2>TO OUR NEWSLETTER</h2>
+                     </div>
+                  </div>
+                  <div class="col-lg-7 col-md-7">
+                     <div class="newsletter-form angle">
+                        <form
+                           action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
+                           method="post"
+                           id="mc-embedded-subscribe-form"
+                           name="mc-embedded-subscribe-form"
+                           class="mc-form footer-newsletter fix"
+                           >
+                           <div class="subscribe-form">
+                              <input
+                                 id="mc-email"
+                                 type="email"
+                                 autocomplete="off"
+                                 placeholder="Enter your email here"
+                                 />
+                              <button id="mc-submit" type="submit">SUBSCRIBE</button>
+                           </div>
+                        </form>
+                        <!-- mailchimp-alerts Start -->
+                        <div class="mailchimp-alerts text-centre fix pull-right">
+                           <div class="mailchimp-submitting"></div>
+                           <!-- mailchimp-submitting end -->
+                           <div class="mailchimp-success"></div>
+                           <!-- mailchimp-success end -->
+                           <div class="mailchimp-error"></div>
+                           <!-- mailchimp-error end -->
+                        </div>
+                        <!-- mailchimp-alerts end -->
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End of Newsletter Area-->
+         <!--Footer Widget Area Start-->
+         <div class="footer-widget-area">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-3 col-md-6">
+                     <div class="single-footer-widget">
+                        <div class="footer-logo">
+                           <a href="index.html"><img src="img/logo/footer1.png" alt=""></a>
+                        </div>
+                        <p>Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants.</p>
+                        <div class="social-icons">
+                           <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                           <a href="#"><i class="zmdi zmdi-rss"></i></a>
+                           <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                           <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                           <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="single-footer-widget">
+                        <h3>GET IN TOUCH</h3>
+                        <br> <br> <br>
+                        <a href="tel:555-555-1212"><i class="fa fa-phone"></i>555-555-1212</a>
+                        <a href="mailto:principal@srkrec.ac.in"><span><i class="fa fa-envelope"></i>principal@srkrec.ac.in</span></a>
+                        <a href="https://srkrec.edu.in/"><span><i class="fa fa-globe"></i>www.srkrec.edu.in</span></a>
+                        <span><i class="fa fa-map-marker"></i>SRKR Marg, China Amiram,<br>
+                        Bhimavaram, A.P, India - 534204</span>
+                     </div>
+                  </div>
+                  <div class="col-lg-3 col-md-6">
+                     <div class="single-footer-widget">
+                        <h3>Useful Links</h3>
+                        <br> <br> <br>
+                        <ul class="footer-list">
+                           <li><a href="#">Teachers &amp; Staff</a></li>
+                           <li><a href="course.html">Our Courses</a></li>
+                           <li><a href="course.html">Courses Categories</a></li>
+                           <li><a href="#">Support</a></li>
+                           <li><a href="#">Terms &amp; Conditions</a></li>
+                           <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End of Footer Widget Area-->
+         <!--Footer Area Start-->
+         <div class="footer-area">
+            <div class="container">
+               <div class="row">
+                  <div class="col-lg-6 col-md-7 col-12">
+                     <span>Copyright &copy; SRKR 2024. All right reserved.Created by <a href="#">SRKR</a></span>
+                  </div>
+                  <div class="col-lg-6 col-md-5 col-12">
+                     <div class="column-right">
+                        <span>Privacy Policy , Terms &amp; Conditions</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!--End of Footer Area-->
+      </footer>
+      </div>
+      <!--End of Bg White-->
+      </div>
+      <!--End of Main Wrapper Area-->
+      <!-- jquery
+         ============================================ -->
+      <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+      <script src="js/vendor/jquery-3.6.0.min.js"></script>
+      <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+      <!-- popper JS
+         ============================================ -->
+      <script src="js/popper.min.js"></script>
+      <!-- bootstrap JS
+         ============================================ -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- AJax Mail JS
+         ============================================ -->
+      <script src="js/ajax-mail.js"></script>
+      <!-- plugins JS
+         ============================================ -->
+      <script src="js/plugins.js"></script>
+      <!-- main JS
+         ============================================ -->
+      <script src="js/main.js"></script>
+   </body>
+</html>

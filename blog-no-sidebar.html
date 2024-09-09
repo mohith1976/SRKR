@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SRKR</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+      />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- favicon
+      ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png" />
+    <!-- Bootstrap CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fontawsome CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Metarial Iconic Font CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+    <!-- Plugin CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/plugin.css" />
+    <!-- Style CSS
+      ============================================ -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Responsive CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world-merc.js"></script>
+    <script src="https://unpkg.com/bs-brain@2.0.4/components/maps/map-1/assets/controller/map-1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/maps/map-1/assets/css/map-1.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      .content {
+      width: 80%;
+      margin: auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+      }
+      h1 {
+      color: #333;
+      text-align: center;
+      }
+      .ranks {
+      margin-top: 20px;
+      }
+      .ranks p {
+      font-size: 18px;
+      font-weight: bold;
+      }
+      .ranks a {
+      display: block;
+      margin: 10px 0;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+      }
+      .ranks a:hover {
+      text-decoration: underline;
+      }
+      table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      }
+      table, th, td {
+      border: 1px solid lightgrey;
+      }
+      th {
+      background-color: skyblue;
+      color: #fff;
+      padding: 10px;
+      }
+      td {
+      padding: 10px;
+      text-align: center;
+      }
+      thead th {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+      .modal-dialog {
+      max-width: 400px;
+      }
+      .modal-dialog-centered {
+      display: flex;
+      align-items: center;
+      min-height: calc(100% - 1rem); /* Adjust if needed */
+      }
+      .modal-lg-custom {
+      max-width: 50%; /* Adjust width to your preference */
+      }
+      .modal-body {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center; /* Center vertically */
+      padding: 0; /* Remove default padding if needed */
+      }
+      .modal-backdrop.show {
+      opacity: 0; /* Hide backdrop */
+      }
+      /* Ensure the modal itself is transparent */
+      .modal {
+      background: transparent !important; /* Transparent background */
+      }
+      .modal-dialog {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; /* Full height to center modal */
+      }
+      .modal-content {
+      background: rgba(173, 216, 230, 0); /* Background color for the modal content */
+      border-radius: 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="loading">
+      <div class="text-center middle">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!--Loading Area End-->
+    <!--Main Wrapper Start-->
+    <div class="as-mainwrapper">
+      <!--Bg White Start-->
+      <div class="bg-white">
+        <!--Header Area Start-->
+        <header>
+          <div class="header-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7 col-md-6 col-12">
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+                  <div class="header-top-right">
+                    <span>Phone: +91 9347923953</span>
+                    <span>Email: srkr@example.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-logo-menu sticker">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-12">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="img/logo/logo.png" style="width:270px;" alt="EDUCAT"
+                      /></a>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="mainmenu-area pull-right">
+                    <div class="mainmenu d-none d-lg-block">
+                      <nav>
+                        <ul id="nav">
+                          <li class="current">
+                            <a href="index.html"></a>
+                          </li>
+                          <li>
+                            <a href="#">About Us</a>
+                            <ul class="sub-menu">
+                              <li><a href="activity.html">Our Activity</a></li>
+                              <li><a href="governingbody.html">Governing Body</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">Academics</a>
+                            <ul class="sub-menu">
+                              <li><a href="about (1).html">Academic Calender</a></li>
+                              <li><a href="blog-left-sidebar.html">Regulation</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="course.html">Admissions</a>
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="course.html"
+                                  >Courses Details</a
+                                  >
+                              </li>
+                              <li>
+                                <a href="blog-no-sidebar.html"
+                                  >Eamcet Cutoff</a
+                                  >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">Research</a>
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="technologycenter.html"
+                                  >Technology Center</a
+                                  >
+                              </li>
+                              <li>
+                                <a href="research.html"
+                                  >Research Projects</a
+                                  >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu Area start -->
+          <div class="mobile-menu-area">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="mobile-menu">
+                    <nav id="dropdown">
+                      <ul>
+                        <li>
+                          <a href="index.html">HOME</a>
+                          <ul>
+                            <li><a href="index.html">Home Version 1</a></li>
+                            <li><a href="index-2.html">Home Version 1</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="gallery.html">Gallery</a>
+                          <ul>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li>
+                              <a href="gallery-2.html">Gallery Filtaring</a>
+                            </li>
+                            <li>
+                              <a href="gallery-four-column.html"
+                                >Gallery Four Column</a
+                                >
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="team-details.html">Team Details</a></li>
+                        <li>
+                          <a href="course.html">Courses</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="courses-details.html">Courses Details</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="shop.html">Shop</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="single-product.html">Single Product</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="event.html">Event</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="event-details.html">Event Details</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="blog.html">Blog</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="blog-details.html">Blog Details</a>
+                            </li>
+                            <li>
+                              <a href="blog-left-sidebar.html"
+                                >Blog Left Sidebar</a
+                                >
+                            </li>
+                            <li>
+                              <a href="blog-no-sidebar.html">Blog No Sidebar</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="contact.html">Pages</a>
+                          <ul>
+                            <li>
+                              <a href="team-details.html">Team Details</a>
+                            </li>
+                            <li><a href="course.html">Courses Page</a></li>
+                            <li>
+                              <a href="courses-details.html"
+                                >Course Details Page</a
+                                >
+                            </li>
+                            <li><a href="event.html">Event Page</a></li>
+                            <li>
+                              <a href="event-details.html"
+                                >Event Details Page</a
+                                >
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li>
+                              <a href="blog-details.html">Blog Details Page</a>
+                            </li>
+                            <li>
+                              <a href="blog-left-sidebar.html"
+                                >Blog Left Sidebar</a
+                                >
+                            </li>
+                            <li>
+                              <a href="blog-no-sidebar.html">Blog No Sidebar</a>
+                            </li>
+                            <li><a href="wishlist.html">Wishlist Page</a></li>
+                            <li><a href="checkout.html">Checkout Page</a></li>
+                            <li><a href="cart.html">Shopping Cart Page</a></li>
+                            <li>
+                              <a href="login-register.html">Login Page</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="404.html">404 Error</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contact.html">Contact us</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu Area end -->
+        </header>
+        <!--End of Header Area-->
+        <!--Breadcrumb Banner Area Start-->
+        <div class="breadcrumb-banner-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="breadcrumb-text">
+                  <h1 class="text-center">Eamcet Rank</h1>
+                  <div class="breadcrumb-bar">
+                    <ul class="breadcrumb text-center">
+                      <li><a href="index.html">Home</a></li>
+                      <li></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <h1>EAPCET/EAMCET RANK CUT-OFF DETAILS</h1>
+          <div class="ranks">
+            <p>LAST RANKS ADMITTED IN EAPCET-2022</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Gender</th>
+                  <th>AID</th>
+                  <th>AIML</th>
+                  <th>CIC</th>
+                  <th>CIV</th>
+                  <th>CSBS</th>
+                  <th>CSE</th>
+                  <th>CSG</th>
+                  <th>ECE</th>
+                  <th>EEE</th>
+                  <th>IT</th>
+                  <th>MECH</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Sample Data -->
+                <tr>
+                  <td>OC</td>
+                  <td>GEN</td>
+                  <td>11981</td>
+                  <td>19096</td>
+                  <td>12195</td>
+                  <td>103954</td>
+                  <td>17548</td>
+                  <td>9381</td>
+                  <td>16439</td>
+                  <td>27170</td>
+                  <td>29374</td>
+                  <td>16449</td>
+                  <td>16205</td>
+                </tr>
+                <tr>
+                  <td>OC</td>
+                  <td>FEM</td>
+                  <td>19938</td>
+                  <td>15536</td>
+                  <td>14540</td>
+                  <td>97795</td>
+                  <td>19283</td>
+                  <td>7061</td>
+                  <td>20269</td>
+                  <td>20332</td>
+                  <td>40349</td>
+                  <td>13854</td>
+                  <td>12592</td>
+                </tr>
+                <tr>
+                  <td>EWS</td>
+                  <td>GEN</td>
+                  <td>13237</td>
+                  <td>18984</td>
+                  <td>20271</td>
+                  <td>115900</td>
+                  <td>25027</td>
+                  <td>9752</td>
+                  <td>17019</td>
+                  <td>23050</td>
+                  <td>54142</td>
+                  <td>10342</td>
+                  <td>10276</td>
+                </tr>
+                <tr>
+                  <td>EWS</td>
+                  <td>FEM</td>
+                  <td>15415</td>
+                  <td>19419</td>
+                  <td>21580</td>
+                  <td>87741</td>
+                  <td>26484</td>
+                  <td>7427</td>
+                  <td>20567</td>
+                  <td>20136</td>
+                  <td>30530</td>
+                  <td>13497</td>
+                  <td>10598</td>
+                </tr>
+                <tr>
+                  <td>BC-A</td>
+                  <td>GEN</td>
+                  <td>30068</td>
+                  <td>23830</td>
+                  <td>46249</td>
+                  <td>144730</td>
+                  <td>58552</td>
+                  <td>9912</td>
+                  <td>8154</td>
+                  <td>49123</td>
+                  <td>67120</td>
+                  <td>18215</td>
+                  <td>20697</td>
+                </tr>
+                <tr>
+                  <td>BC-A</td>
+                  <td>FEM</td>
+                  <td>63257</td>
+                  <td>32587</td>
+                  <td>21457</td>
+                  <td>105765</td>
+                  <td>54868</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>45041</td>
+                  <td>87969</td>
+                  <td>22085</td>
+                  <td>146759</td>
+                </tr>
+                <tr>
+                  <td>BC-B</td>
+                  <td>GEN</td>
+                  <td>19073</td>
+                  <td>18275</td>
+                  <td>20573</td>
+                  <td>139616</td>
+                  <td>31902</td>
+                  <td>9502</td>
+                  <td>33380</td>
+                  <td>32524</td>
+                  <td>22775</td>
+                  <td>22828</td>
+                  <td>138131</td>
+                </tr>
+                <tr>
+                  <td>BC-B</td>
+                  <td>FEM</td>
+                  <td>15501</td>
+                  <td>26451</td>
+                  <td>35047</td>
+                  <td>135776</td>
+                  <td>37042</td>
+                  <td>12167</td>
+                  <td>30837</td>
+                  <td>29501</td>
+                  <td>75463</td>
+                  <td>21133</td>
+                  <td>123866</td>
+                </tr>
+                <tr>
+                  <td>BC-C</td>
+                  <td>GEN</td>
+                  <td>--</td>
+                  <td>11485</td>
+                  <td>--</td>
+                  <td>159326</td>
+                  <td>--</td>
+                  <td>69253</td>
+                  <td>--</td>
+                  <td>52148</td>
+                  <td>37317</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>BC-C</td>
+                  <td>FEM</td>
+                  <td>--</td>
+                  <td>29388</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>22528</td>
+                  <td>--</td>
+                  <td>65743</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>BC-D</td>
+                  <td>GEN</td>
+                  <td>30311</td>
+                  <td>22637</td>
+                  <td>19659</td>
+                  <td>96214</td>
+                  <td>7649</td>
+                  <td>26670</td>
+                  <td>33559</td>
+                  <td>30333</td>
+                  <td>55993</td>
+                  <td>30963</td>
+                  <td>31247</td>
+                </tr>
+                <tr>
+                  <td>BC-D</td>
+                  <td>FEM</td>
+                  <td>18500</td>
+                  <td>20659</td>
+                  <td>22710</td>
+                  <td>76519</td>
+                  <td>26484</td>
+                  <td>19485</td>
+                  <td>22919</td>
+                  <td>30150</td>
+                  <td>45476</td>
+                  <td>28316</td>
+                  <td>33344</td>
+                </tr>
+                <tr>
+                  <td>BC-E</td>
+                  <td>GEN</td>
+                  <td>25976</td>
+                  <td>28995</td>
+                  <td>29654</td>
+                  <td>120331</td>
+                  <td>29987</td>
+                  <td>12965</td>
+                  <td>14894</td>
+                  <td>26212</td>
+                  <td>53849</td>
+                  <td>30411</td>
+                  <td>40314</td>
+                </tr>
+                <tr>
+                  <td>BC-E</td>
+                  <td>FEM</td>
+                  <td>16758</td>
+                  <td>22493</td>
+                  <td>22244</td>
+                  <td>95087</td>
+                  <td>23349</td>
+                  <td>10829</td>
+                  <td>14947</td>
+                  <td>23322</td>
+                  <td>34798</td>
+                  <td>20342</td>
+                  <td>45369</td>
+                </tr>
+                <tr>
+                  <td>SC</td>
+                  <td>GEN</td>
+                  <td>49455</td>
+                  <td>55665</td>
+                  <td>78917</td>
+                  <td>169262</td>
+                  <td>81088</td>
+                  <td>26213</td>
+                  <td>94989</td>
+                  <td>68725</td>
+                  <td>125481</td>
+                  <td>66882</td>
+                  <td>170063</td>
+                </tr>
+                <tr>
+                  <td>SC</td>
+                  <td>FEM</td>
+                  <td>103403</td>
+                  <td>110765</td>
+                  <td>12052</td>
+                  <td>105977</td>
+                  <td>80691</td>
+                  <td>26293</td>
+                  <td>132556</td>
+                  <td>72615</td>
+                  <td>171844</td>
+                  <td>66584</td>
+                  <td>125583</td>
+                </tr>
+                <tr>
+                  <td>ST</td>
+                  <td>GEN</td>
+                  <td>64290</td>
+                  <td>111157</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>97437</td>
+                  <td>--</td>
+                  <td>171208</td>
+                  <td>--</td>
+                  <td>170169</td>
+                  <td>--</td>
+                </tr>
+                <tr>
+                  <td>ST</td>
+                  <td>FEM</td>
+                  <td>114584</td>
+                  <td>110832</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>100535</td>
+                  <td>--</td>
+                  <td>79825</td>
+                  <td>--</td>
+                  <td>--</td>
+                  <td>--</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <footer>
+          <!--Newsletter Area Start-->
+          <div class="newsletter-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-5">
+                  <div class="newsletter-content">
+                    <h3>SUBSCRIBE</h3>
+                    <h2>TO OUR NEWSLETTER</h2>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-md-7">
+                  <div class="newsletter-form angle">
+                    <form
+                      action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef"
+                      method="post"
+                      id="mc-embedded-subscribe-form"
+                      name="mc-embedded-subscribe-form"
+                      class="mc-form footer-newsletter fix"
+                      >
+                      <div class="subscribe-form">
+                        <input
+                          id="mc-email"
+                          type="email"
+                          autocomplete="off"
+                          placeholder="Enter your email here"
+                          />
+                        <button id="mc-submit" type="submit">SUBSCRIBE</button>
+                      </div>
+                    </form>
+                    <!-- mailchimp-alerts Start -->
+                    <div class="mailchimp-alerts text-centre fix pull-right">
+                      <div class="mailchimp-submitting"></div>
+                      <!-- mailchimp-submitting end -->
+                      <div class="mailchimp-success"></div>
+                      <!-- mailchimp-success end -->
+                      <div class="mailchimp-error"></div>
+                      <!-- mailchimp-error end -->
+                    </div>
+                    <!-- mailchimp-alerts end -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Newsletter Area-->
+          <!--Footer Widget Area Start-->
+          <div class="footer-widget-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="single-footer-widget">
+                    <div class="footer-logo">
+                      <a href="index.html"><img src="img/logo/footer1.png" alt=""></a>
+                    </div>
+                    <p>Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants.</p>
+                    <div class="social-icons">
+                      <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                      <a href="#"><i class="zmdi zmdi-rss"></i></a>
+                      <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                      <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                      <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                     <div class="single-footer-widget">
+                        <h3>GET IN TOUCH</h3>
+                        <br> <br> <br>
+                        <a href="tel:555-555-1212"><i class="fa fa-phone"></i>555-555-1212</a>
+                        <a href="mailto:principal@srkrec.ac.in"><span><i class="fa fa-envelope"></i>principal@srkrec.ac.in</span></a>
+                        <a href="https://srkrec.edu.in/"><span><i class="fa fa-globe"></i>www.srkrec.edu.in</span></a>
+                        <span><i class="fa fa-map-marker"></i>SRKR Marg, China Amiram,<br>
+                        Bhimavaram, A.P, India - 534204</span>
+                     </div>
+                  </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Useful Links</h3>
+                    <br> <br> <br>
+                    <ul class="footer-list">
+                      <li><a href="#">Teachers &amp; Staff</a></li>
+                      <li><a href="course.html">Our Courses</a></li>
+                      <li><a href="course.html">Courses Categories</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Terms &amp; Conditions</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Footer Widget Area-->
+          <!--Footer Area Start-->
+          <div class="footer-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-7 col-12">
+                  <span>Copyright &copy; SRKR 2024. All right reserved.Created by <a href="#">SRKR</a></span>
+                </div>
+                <div class="col-lg-6 col-md-5 col-12">
+                  <div class="column-right">
+                    <span>Privacy Policy , Terms &amp; Conditions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Footer Area-->
+        </footer>
+      </div>
+      <!--End of Bg White-->
+    </div>
+    <!--End of Main Wrapper Area-->
+    <!-- jquery
+      ============================================ -->
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- popper JS
+      ============================================ -->
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap JS
+      ============================================ -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- AJax Mail JS
+      ============================================ -->
+    <script src="js/ajax-mail.js"></script>
+    <!-- plugins JS
+      ============================================ -->
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+      ============================================ -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

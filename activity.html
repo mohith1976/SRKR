@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>SRKR</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=0"
+      />
+    <!-- favicon
+      ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="img/logo/favicon.png" />
+    <!-- Bootstrap CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fontawsome CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <!-- Metarial Iconic Font CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css" />
+    <!-- Plugin CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/plugin.css" />
+    <!-- Style CSS
+      ============================================ -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Responsive CSS
+      ============================================ -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsvectormap/dist/maps/world-merc.js"></script>
+    <script src="https://unpkg.com/bs-brain@2.0.4/components/maps/map-1/assets/controller/map-1.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jsvectormap/dist/css/jsvectormap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/maps/map-1/assets/css/map-1.css">
+    <style>
+      *n{
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      }
+      .container1 {
+      display: flex;
+      width: 80%;
+      margin: 20px auto;
+      }
+      .sidebar1 {
+      width: 25%;
+      background-color: #f7f7f7;
+      padding: 20px;
+      margin-right: 20px;
+      }
+      .sidebar1 h2 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      }
+      .sidebar1 ul {
+      list-style-type: none;
+      padding: 0;
+      }
+      .sidebar1 ul li {
+      margin: 10px 0;
+      color: #007bff;
+      cursor: pointer;
+      }
+      .main-content1 {
+      width: 70%;
+      padding: 20px;
+      }
+      .main-content1 h1 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      }
+      .main-content1 h2 {
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 15px;
+      }
+      .main-content1 p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+      }
+      .main-content1 ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-bottom: 20px;
+      }
+      .main-content1 ul li {
+      margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Loading Area Start-->
+    <div class="loading">
+      <div class="text-center middle">
+        <div class="lds-ellipsis">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <!--Loading Area End-->
+    <!--Main Wrapper Start-->
+    <div class="as-mainwrapper">
+      <!--Bg White Start-->
+      <div class="bg-white">
+        <!--Header Area Start-->
+        <header>
+          <div class="header-top">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-7 col-md-6 col-12">
+                </div>
+                <div class="col-lg-5 col-md-6 col-12">
+                  <div class="header-top-right">
+                    <span>Phone: +91 9347923953</span>
+                    <span>Email: srkr@example.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="header-logo-menu sticker">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-12">
+                  <div class="logo">
+                    <a href="index.html"
+                      ><img src="img/logo/logo.png" style="width:270px;" alt="EDUCAT"
+                      /></a>
+                  </div>
+                </div>
+                <div class="col-lg-9 col-12">
+                  <div class="mainmenu-area pull-right">
+                    <div class="mainmenu d-none d-lg-block">
+                      <nav>
+                        <ul id="nav">
+                          <li class="current">
+                            <a href="index.html"></a>
+                          </li>
+                          <li>
+                            <a href="#">About Us</a>
+                            <ul class="sub-menu">
+                              <li><a href="activity.html">Our Activity</a></li>
+                              <li><a href="governingbody.html">Governing Body</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">Academics</a>
+                            <ul class="sub-menu">
+                              <li><a href="about (1).html">Academic Calender</a></li>
+                              <li><a href="blog-left-sidebar.html">Regulation</a></li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="course.html">Admissions</a>
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="course.html"
+                                  >Courses Details</a
+                                  >
+                              </li>
+                              <li>
+                                <a href="blog-no-sidebar.html"
+                                  >Eamcet Cutoff</a
+                                  >
+                              </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <a href="">Research</a>
+                            <ul class="sub-menu">
+                              <li>
+                                <a href="technologycenter.html"
+                                  >Technology Center</a
+                                  >
+                              </li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu Area start -->
+          <div class="mobile-menu-area">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                  <div class="mobile-menu">
+                    <nav id="dropdown">
+                      <ul>
+                        <li>
+                          <a href="index.html">HOME</a>
+                          <ul>
+                            <li><a href="index.html">Home Version 1</a></li>
+                            <li><a href="index-2.html">Home Version 1</a></li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="gallery.html">Gallery</a>
+                          <ul>
+                            <li><a href="gallery.html">Gallery</a></li>
+                            <li>
+                              <a href="gallery-2.html">Gallery Filtaring</a>
+                            </li>
+                            <li>
+                              <a href="gallery-four-column.html"
+                                >Gallery Four Column</a
+                                >
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a href="team-details.html">Team Details</a></li>
+                        <li>
+                          <a href="course.html">Courses</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="courses-details.html">Courses Details</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="shop.html">Shop</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="single-product.html">Single Product</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="event.html">Event</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="event-details.html">Event Details</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="blog.html">Blog</a>
+                          <ul class="sub-menu">
+                            <li>
+                              <a href="blog-details.html">Blog Details</a>
+                            </li>
+                            <li>
+                              <a href="blog-left-sidebar.html"
+                                >Blog  Sidebar</a
+                                >
+                            </li>
+                            <li>
+                              <a href="blog-no-sidebar.html">Blog No Sidebar</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="contact.html">Pages</a>
+                          <ul>
+                            <li>
+                              <a href="team-details.html">Team Details</a>
+                            </li>
+                            <li><a href="course.html">Courses Page</a></li>
+                            <li>
+                              <a href="courses-details.html"
+                                >Course Details Page</a
+                                >
+                            </li>
+                            <li><a href="event.html">Event Page</a></li>
+                            <li>
+                              <a href="event-details.html"
+                                >Event Details Page</a
+                                >
+                            </li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li>
+                              <a href="blog-details.html">Blog Details Page</a>
+                            </li>
+                            <li>
+                              <a href="blog-left-sidebar.html"
+                                >Blog Left Sidebar</a
+                                >
+                            </li>
+                            <li>
+                              <a href="blog-no-sidebar.html">Blog No Sidebar</a>
+                            </li>
+                            <li><a href="wishlist.html">Wishlist Page</a></li>
+                            <li><a href="checkout.html">Checkout Page</a></li>
+                            <li><a href="cart.html">Shopping Cart Page</a></li>
+                            <li>
+                              <a href="login-register.html">Login Page</a>
+                            </li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="404.html">404 Error</a></li>
+                          </ul>
+                        </li>
+                        <li><a href="contact.html">Contact us</a></li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Mobile Menu Area end -->
+        </header>
+        <div class="container1">
+          <div class="sidebar1">
+            <h2>QUICK LINKS</h2>
+            <ul>
+              <li><a href="#ap">AP CM SKILL EXCELLENCE CENTRE</a></li>
+              <li><a href="#idealab">IIT BOMBAY REMOTE CENTRE</a></li>
+              <li><a href="#idealab">IIT MADRAS NPTEL LOCAL CHAPTER</a></li>
+              <li><a href="#idealab">CISCO NETWORKING ACADEMY</a></li>
+              <li><a href="#idealab">APSSDC SKILL DEVELOPMENT CENTRE</a></li>
+              <li><a href="#idealab">IIT BOMBAY SPOKEN TUTORIAL LEAD COLLEGE</a></li>
+              <li><a href="#idealab">AICTE IDEALAB</a></li>
+            </ul>
+          </div>
+          <div class="main-content1">
+            <h1 id="idealab">Technology Centre - IHUB - AICTEIDEALAB Facilities</h1>
+            <p>
+              1. Technology Centre - Skill Improvement Programs / Workshops<br>
+              2. Digital Learning Centre - MOOCs Courses<br>
+              3. Innovation Centre - Design Thinking & Ideation Programs<br>
+              4. Incubation Centre - I-Hub, MSME & Startups<br>
+              5. AICTE IDEALAB - Ideation, Prototype, Product, Commercialization & Consultancy
+            </p>
+            <p>
+              Technology Centre has been established with an aim to facilitate technology training and various skill development programs / workshops for all the students of SRKR Engineering College. The centre concentrates on skill development in latest technologies and encourages the students to do projects in all disciplines of engineering / technology. Technology Centre has been well equipped with a dedicated computer lab with all necessary facilities.
+            </p>
+            <h2>Technology Centre objectives are :</h2>
+            <ul>
+              <li>To develop and implement support strategies and methodologies of effective use of information technology.</li>
+              <li>To maintain reliable technological infrastructures, and provide continuous improvement and technical support to the students and staff.</li>
+              <li>To plan, organize and provide training that will enhance students' knowledge and skills that are increasingly fundamental for students in educational institutions.</li>
+              <li>To organize courses to increase information technology literacy, exposure, and skills of SRKREC students that will be essential in the students' job career.</li>
+            </ul>
+            <h2>I-Hub (Innovation, Incubation, Industry)</h2>
+            <p>
+              I-Hub has been established with an aim to promote innovation and entrepreneurship among students and teaching staff of SRKR Engineering College. The centre concentrates on latest technologies, new idea generation and encourages the students to do projects, prototypes, and ideations in all disciplines of engineering. The SRKR i-Hub nurtures innovation, and encourages entrepreneurial skills.
+            </p>
+            <h2>Technology Centre & I-Hub Major Activities:</h2>
+            <ol>
+              <li>Technology Training / Skill Improvement Programs / FDPs / Workshops / Certifications</li>
+              <li>Innovation Activities & Challenges / Entrepreneurship / Startups</li>
+              <li>Contests & Hackathons</li>
+              <li>Research</li>
+              <li>Software Development</li>
+              <li>Internship</li>
+              <li>Consultancy</li>
+              <li>Bootcamps</li>
+              <li>Institute Industry Interaction</li>
+              <li>New Academic Department - Computer Science & Design (CSD)</li>
+            </ol>
+            <h2>Technology Training And Certifications</h2>
+            <ul>
+              <li>Workshops - 15</li>
+              <li>SDPs - 35</li>
+              <li>NPTEL - 5000</li>
+              <li>IIT Bombay Spoken Tutorial - 1110</li>
+              <li>Udacity Nano degrees - 75 (Machine Learning & Android)</li>
+              <li>Coursera - Data Science - 160</li>
+              <li>Coursera Certifications - 2200</li>
+              <li>FDPs - 05</li>
+              <li>Internships - 100</li>
+              <li>CISCO - 5228</li>
+              <li>Microsoft Virtual Academy - 600</li>
+              <li>APSSDC - 3000</li>
+              <li>Udemy - 600</li>
+            </ul>
+            <h2>Innovation</h2>
+            <ul>
+              <li>AICTE Smart India Hackathon: Participated in all 4 editions</li>
+              <li>ZF Innovation Challenge: Third prize (Rs 25000/-) - 4 students placed in ZF</li>
+              <li>AICTE - CVK Awards - Regional Convention</li>
+              <li>Startup India Challenge - First Prize (Rs 75000/-)</li>
+              <li>APITA College Connect Students Innovation Challenge - 1st (Rs 75000/-) & 3rd (Rs 25000/-) Prizes</li>
+              <li>IIT Bombay - E Yantra Robotics Competition - Stood in Top 10</li>
+              <li>AICTE Smart India Hackathon-2020 -- Won First prize - Rs 1 lakh</li>
+              <li>AICTE Smart India Hackathon-2022 -- Won First prize - Rs 1 lakh</li>
+              <li>ARIIA 2020 Rank - 6th - 25th Band</li>
+              <li>ARIIA 2021 Rank - Best Performer</li>
+              <li>NIRF-Innovation Rank: 150-200 Band</li>
+              <li>IIC 2.0 (2019-20) - 4.5 Star Rating</li>
+              <li>IIC 3.0 (2020-21) - 2 Star Rating</li>
+              <li>IIC 4.0 (2021-22) - 3 Star Rating</li>
+              <li>IIC 5.0 (2022-23) - 3 Star Rating</li>
+              <li>Stanford University Innovation Fellows (UIFs) - 5 Batches (20 students) attended Silicon Valley Meetup @ Stanford University, San Francisco, USA</li>
+            </ul>
+            <h2>Entrepreneurship / Startup</h2>
+            <p>Active in-house Startups - 5 (Sri Maharshi, CarryShare Pvt.Ltd, MCR, MSR, Elon Motors) Funded Startups - AICTE - 9 Student Startups mentored by Technology Centre</p>
+            <h2>Contests Conducted</h2>
+            <p>Codemaster - Quizomania - Spardha Hackathon - AICTE SIH - Internal Hackathon</p>
+            <h1 id="ap">AP CM Skill Excellence Centre</h1>
+            <h2>About APSSDC</h2>
+            <p>
+              APSSDC was formed to bring faster execution of skill initiatives, coordinate and synergize skilling efforts of all departments. It acts as a nodal agency for promotion of skill development, entrepreneurship, and innovation in the State. APSSDC covers all groups, both academic and non-academic. One major group under academic is the engineering profession.
+            </p>
+            <h2>About CM Skill Excellence Centers (CMSEC)</h2>
+            <p>
+              In order to scale up and increase the number of skilled candidates in Engineering Colleges and improve placement opportunities, APSSDC is planning to set up two labs under CMSEC:
+            </p>
+            <h3>1. Skill Excellence Centers - Computing Labs</h3>
+            <p>
+              Knowledge Partners: Google, Amazon, Microsoft, Udacity, Coursera, etc.
+            </p>
+            <h3>2. Skill Excellence Center - Design, Automation, and Simulation Labs with AR/VR</h3>
+            <p>
+              Knowledge Partner: Dassault Systèmes
+            </p>
+          </div>
+        </div>
+        <footer>
+        <!--Newsletter Area Start-->
+        <div class="newsletter-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-5 col-md-5">
+                <div class="newsletter-content">
+                  <h3>SUBSCRIBE</h3>
+                  <h2>TO OUR NEWSLETTER</h2>
+                </div>
+              </div>
+              <div class="col-lg-7 col-md-7">
+                <div class="newsletter-form angle">
+                  <form action="http://devitems.us11.list-manage.com/subscribe/post?u=6bbb9b6f5827bd842d9640c82&amp;id=05d85f18ef" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mc-form footer-newsletter fix">
+                    <div class="subscribe-form">
+                      <input id="mc-email" type="email" autocomplete="off" placeholder="Enter your email here">
+                      <button id="mc-submit" type="submit">SUBSCRIBE</button>
+                    </div>
+                  </form>
+                  <!-- mailchimp-alerts Start -->
+                  <div class="mailchimp-alerts text-centre fix pull-right">
+                    <div class="mailchimp-submitting"></div>
+                    <!-- mailchimp-submitting end -->
+                    <div class="mailchimp-success"></div>
+                    <!-- mailchimp-success end -->
+                    <div class="mailchimp-error"></div>
+                    <!-- mailchimp-error end -->
+                  </div>
+                  <!-- mailchimp-alerts end -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--End of Newsletter Area-->
+        <footer>
+          <!--Footer Widget Area Start-->
+          <div class="footer-widget-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-3 col-md-6">
+                  <div class="single-footer-widget">
+                    <div class="footer-logo">
+                      <a href="index.html"><img src="img/logo/footer1.png" alt=""></a>
+                    </div>
+                    <p>Sagi Rama Krishnam Raju Engineering College (SRKREC), established in 1980, is a self-financed academic institution of coeducation striving to provide a high quality technical education to engineering aspirants.</p>
+                    <div class="social-icons">
+                      <a href="#"><i class="zmdi zmdi-facebook"></i></a>
+                      <a href="#"><i class="zmdi zmdi-rss"></i></a>
+                      <a href="#"><i class="zmdi zmdi-google-plus"></i></a>
+                      <a href="#"><i class="zmdi zmdi-pinterest"></i></a>
+                      <a href="#"><i class="zmdi zmdi-instagram"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>GET IN TOUCH</h3>
+                    <br> <br> <br>
+                    <a href="tel:555-555-1212"><i class="fa fa-phone"></i>555-555-1212</a>
+                    <span><i class="fa fa-envelope"></i>srkr@example.com</span>
+                    <span><i class="fa fa-globe"></i>www.srkrec.edu.in</span>
+                    <span><i class="fa fa-map-marker"></i>ur address goes here,street.</span>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                  <div class="single-footer-widget">
+                    <h3>Useful Links</h3>
+                    <br> <br> <br>
+                    <ul class="footer-list">
+                      <li><a href="#">Teachers &amp; Staff</a></li>
+                      <li><a href="course.html">Our Courses</a></li>
+                      <li><a href="course.html">Courses Categories</a></li>
+                      <li><a href="#">Support</a></li>
+                      <li><a href="#">Terms &amp; Conditions</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Footer Widget Area-->
+          <!--Footer Area Start-->
+          <div class="footer-area">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-7 col-12">
+                  <span>Copyright &copy; SRKR 2024. All right reserved.Created by <a href="#">SRKR</a></span>
+                </div>
+                <div class="col-lg-6 col-md-5 col-12">
+                  <div class="column-right">
+                    <span>Privacy Policy , Terms &amp; Conditions</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--End of Footer Area-->
+        </footer>
+      </div>
+      <!--End of Bg White--> 
+    </div>
+    <!--End of Main Wrapper Area--> 
+    <!-- jquery
+      ============================================ -->		
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- popper JS
+      ============================================ -->		
+    <script src="js/popper.min.js"></script>
+    <!-- bootstrap JS
+      ============================================ -->		
+    <script src="js/bootstrap.min.js"></script>
+    <!-- AJax Mail JS
+      ============================================ -->		
+    <script src="js/ajax-mail.js"></script>
+    <!-- plugins JS
+      ============================================ -->		
+    <script src="js/plugins.js"></script>
+    <!-- main JS
+      ============================================ -->		
+    <script src="js/main.js"></script>
+  </body>
+</html>
